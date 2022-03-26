@@ -1,0 +1,84 @@
+{
+    "doctors": [
+      {
+        "id": 1,
+        "name": "Петров Петр Иванович",
+        "specialist": "Терапевт",
+        "price": 1300,
+        "rating": 9.8,
+        "photo": "https://nordin.by/files/theme/img/doctor-full.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Леонид Семенович Каневский",
+        "specialist": "Окулист",
+        "price": 1400,
+        "rating": 7,
+        "photo": "https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/d20d22a1-ceb4-4dd8-8577-c66260ac71a7/360"
+      },
+      {
+        "id": 3,
+        "name": "Птичкина Надежда Олеговна",
+        "specialist": "Уролог",
+        "price": 1500,
+        "rating": 9.1,
+        "photo": "https://276709.selcdn.ru/proektoria/new/professions/2020/03/24/8f85517967795eeef66c225f7883bdcb/2019-12-08_15-22-58.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Медведева Евгения Дмитриевна",
+        "specialist": "Кардиолог",
+        "price": 1300,
+        "rating": 7.8,
+        "photo": "https://p0.zoon.ru/preview/yaXnyE8wGBPmQCIUzei7rA/130x170x90/0/1/9/5631ecb0f2e3c619198b458f_5631ecc7cc069.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Смирнов Марк Артемович",
+        "specialist": "Психиатр",
+        "price": 1650,
+        "rating": 6.1,
+        "photo": "https://www.meme-arsenal.com/memes/225232f5c7a42a06daac60b59209a560.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Мартынов Алексей Иванович",
+        "specialist": "Невролог",
+        "price": 1350,
+        "rating": 6.5,
+        "photo": "https://www.shkolazhizni.ru/img/content/i133/133728_or.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Ананьев Артем Романович",
+        "specialist": "Офтальмолог",
+        "price": 1000,
+        "rating": 6.7,
+        "photo": "https://p2.zoon.ru/preview/heaVJtyyk3uu5qIaWZQpbA/130x170x90/1/8/b/59c9f3f9d59cd6297b08f335_59c9f407ba663.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Борисова София Григорьевна",
+        "specialist": "Хирург",
+        "price": 1600,
+        "rating": 8,
+        "photo": "https://simpledoc.ru/resume/examples/vrach/res/i/photo.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Дмитриев Александр Артемович",
+        "specialist": "Ортопед",
+        "price": 1600,
+        "rating": 10,
+        "photo": "https://p1.zoon.ru/preview/TlAnqzHV2XBF85rmzXLGOA/130x170x90/1/8/9/5e82c6aab56ffa2cd9533e7f_5ef472b722861.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Новикова Маргарита Данииловна",
+        "specialist": "Отоларинголог",
+        "price": 1150,
+        "rating": 8.8,
+        "photo": "https://100med.ru/upload/resize_cache/iblock/602/1200_9999_1/Vyzov-vracha-na-dom.jpg"
+      }
+    ]
+  }
