@@ -109,7 +109,7 @@ export default {
     GetFirms(search) {
       let url =
         "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/party";
-      let token = "1edf7b92c5e7dc9c677156148ed0e130d44e0816";
+      let token = process.env.VUE_APP_TOKEN;
       let query = search;
 
       let options = {
