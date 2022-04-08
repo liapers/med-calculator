@@ -59,7 +59,6 @@ export default {
 .sortBlockSelect {
     align-self: flex-end;
   width: 30%;
-  /* justify-content: flex-end; */
 }
 
 .select-p{
@@ -67,8 +66,6 @@ margin-right: 10px;
 }
 .selectDoctor {
   position: relative;
-  /* width: 100%;
-  max-width: 100px; */
   cursor: pointer;
 }
 

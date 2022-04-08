@@ -47,5 +47,6 @@ export default {
 }
 #organization {
   margin-bottom: 0;
+  background-color: white;
 }
 </style>

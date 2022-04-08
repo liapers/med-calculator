@@ -14,7 +14,7 @@
       />
     </div>
     <div class="blok-countPeople">
-      <p class="countPeople">{{ value }} человек</p>
+      <p class="countPeople"><span class="count">{{ value }}</span> человек</p>
     </div>
   </div>
 </template>
@@ -35,16 +35,18 @@ export default {
 
 <style>
 
+.countPeople {
+  margin: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 .title-countPeople{
   margin: 0;
   margin-bottom: 30px;
   color: #004961;
-}
-
-.countPeople {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .range-people {
@@ -55,11 +57,8 @@ export default {
   width: 100%;
   height: 15px;
   border-radius: 5px;
-  background: #d3d3d3;
+  background: white;
   outline: none;
-  opacity: 0.7;
-  -webkit-transition: 0.2s;
-  transition: opacity 0.2s;
   margin-bottom: 30px;
 }
 
@@ -85,7 +84,9 @@ export default {
   width: 10%;
 }
 
-.countPeople {
-  margin: 0;
+
+.count{
+  color: #004961;
+  font-weight: bold;
 }
 </style>

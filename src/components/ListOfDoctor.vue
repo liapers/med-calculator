@@ -1,6 +1,5 @@
 <template>
   <li class="info-doctor" :id="doctor.id">
-    
     <label class="label-doctor flex">
       <input
         @click="PostChange"
@@ -44,8 +43,6 @@ export default {
     PostChange() {
       let activeDoc = document.getElementById(`${this.doctor.id}`);
       this.docFlag ? (this.docFlag = false) : (this.docFlag = true);
-      console.log(this.doctor.id)
-
       if (this.docFlag) {
         activeDoc.classList.add("active");
       } else {
@@ -75,6 +72,7 @@ ul {
   overflow: hidden;
   border: 2px solid #a0dbe8;
   border-radius: 5px;
+  background-color: white;
 }
 
 .info-doctor:last-child {

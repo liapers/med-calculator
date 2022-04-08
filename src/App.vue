@@ -3,7 +3,8 @@
     <div class="container">
       <Header />
       <form
-        class="main-form flex"
+      id="mainForm"
+        class="mainForm flex"
         action="http://localhost:3000/request"
         method="POST"
       >
@@ -23,7 +24,7 @@
           />
         </div>
         <!-- Список врачей в поликлинике -->
-        <ul class="doctor-list flex">
+        <ul class="doctorList flex">
           <ListOfDoctor
             @change-doctor="SaveCheckedDoctor"
             v-for="doctor in SearchDoctor"
@@ -33,11 +34,13 @@
         </ul>
         <!-- Выбор количества сотрудников, идущих на прием -->
         <NumberOfPeople @count-people="SaveCount" />
+        <!-- Выбор времени и дня недели -->
+        <DayofTheWeek/>
         <!-- Подсчет итоговой суммы приемов врачей -->
         <div class="totalCount">
           Итоговая сумма:<span class="bold-totalPrice"> {{ totalPrice }}</span>
         </div>
-        <input type="hidden" name="totalCount" :value="totalPrice" />
+        <input id="totalCount" type="hidden" name="totalCount" :value="totalPrice" />
         <button class="btnDone" type="submit">Отправить заявку</button>
       </form>
     </div>
@@ -53,6 +56,7 @@ import NumberOfPeople from "./components/NumberOfPeople.vue";
 import SearchOrganization from "./components/SearchOranization/SearchOrganization.vue";
 import SearchDoctor from "./components/SearchDoctor.vue";
 import SelectDoctor from "./components/SelectDoctor.vue";
+import DayofTheWeek from "./components/DayandTime/DayofTheWeek.vue"
 
 export default {
   data() {
@@ -80,6 +84,7 @@ export default {
     SearchOrganization,
     SearchDoctor,
     SelectDoctor,
+    DayofTheWeek
   },
   //получаем докторов
   beforeMount() {
@@ -191,12 +196,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 /*Общие стили */
 body {
   font-family: Arial, Verdana, sans-serif;
+  background-color: #F1F1F1;
 }
 
 a {
@@ -218,11 +224,11 @@ img {
   display: flex;
 }
 
-.main-form {
+.mainForm {
   flex-direction: column;
 }
 
-.doctor-list {
+.doctorList {
   margin: 0;
   flex-direction: column;
   flex-wrap: wrap;
@@ -256,9 +262,10 @@ img {
   width: 50%;
   height: 35px;
   /* background-color: #004961; */
-  background-color: #a0dbe8;
-  border-radius: 10px;
   border-color: #004961;
+  border-radius: 10px;
+  background-color: white;
+  color: #004961;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
