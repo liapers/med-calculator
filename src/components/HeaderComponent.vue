@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header flex">
     <div class="header-logo flex">
       <img class="header-logo-img" src="../img/logo.png" alt="logo" />
       <h2 class="header-desc">Счастье начинается с любви к себе</h2>
@@ -11,6 +11,7 @@
 .header {
   margin: 0;
   margin-bottom: 30px;
+  justify-content: center;
 }
 
 .header-logo {

@@ -38,6 +38,7 @@ export default {
   max-width: 70%;
   border: 2px solid #a0dbe8;
   margin-bottom: 10px;
+  background-color: white;
 }
 
 

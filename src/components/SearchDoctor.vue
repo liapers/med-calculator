@@ -41,8 +41,7 @@ export default {
   height: 35px;
   border-color: #a0dbe8;
   margin-right: 0;
-
-  background: url("../img/search-icon.png");
+  background-image: url("../img/search-icon.png");
   background-position: center left 5px;
   background-size: 30px;
   background-repeat: no-repeat;
